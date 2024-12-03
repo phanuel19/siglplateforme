@@ -4,7 +4,7 @@ function Games() {
     return (
         <>
         <Navbar/>
-        <div>
+        <div id="main">
             Games
         </div>
             

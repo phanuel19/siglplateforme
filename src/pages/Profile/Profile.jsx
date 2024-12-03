@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Login from "../Login/Login";
 
+
 function Profile() {
   const [json, setJson] = useState(null);
   const userJson = localStorage.getItem("@user");
@@ -12,8 +13,8 @@ function Profile() {
 
   return (
     <>
-      <Navbar />
-      <div id="main">{currentUser ? <p>profile</p> : <Login />}</div>
+     
+     {currentUser ? ( <><Navbar />< div id="main"><p>profile</p></div></> ) : <Login />}
     </>
   );
 }

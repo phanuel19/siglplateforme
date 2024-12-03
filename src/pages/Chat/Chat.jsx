@@ -4,7 +4,7 @@ function Chat() {
     return (    
         <>
         <Navbar/>
-        <div>Chat</div>
+        <div id="main">Chat</div>
         </>
     )
 }

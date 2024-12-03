@@ -4,8 +4,14 @@ import { signOut } from "firebase/auth";
 import "./Navbar.css";
 import { toast } from "sonner";
 import { useEffect, useState } from "react";
-// import Home from '../../pages/Home/Home'
-// import Profile from '../../pages/Profile/Profile'
+import { BiWorld } from "react-icons/bi";
+import { FaRegUserCircle } from "react-icons/fa";
+import { MdGames,MdOutlineChat } from "react-icons/md";
+
+
+
+
+
 export default function Navbar() {
   const [json, setJson]=useState(null)
   useEffect(() => {
@@ -26,16 +32,16 @@ export default function Navbar() {
     
   }
   return (
-    <div>
+    <div id="principal">
       
       <h4> {currentUser?.email || ""} </h4>
       <nav className="nav-bar">
         {currentUser ? (
           <>
-            <Link to="/Home">World</Link>
-            <Link to="/Games">Games</Link>
-            <Link to="/Chat">Messagerie</Link>
-            <Link to="/">Profile</Link>
+            <Link to="/Home"> <BiWorld /> World</Link>
+            <Link to="/Games"><MdGames /> Games</Link>
+            <Link to="/Chat"> <MdOutlineChat /> Chat</Link>
+            <Link to="/"> <FaRegUserCircle /> Profile</Link>
             <button onClick={SignOut}>Deconnexion</button>
           </>
         ) : (

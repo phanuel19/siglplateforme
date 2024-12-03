@@ -24,3 +24,7 @@ body, #root {
   height: 100vh;
 }
 
+#main{
+  width: 80%;
+  background-color: red;
+}
