@@ -5,7 +5,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ErrorPage from "./error-page";
 import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
-import Games from "./pages/games/Games";
+import Games from "./pages/Games/Games";
 import Chat from "./pages/Chat/Chat";
 import { Toaster } from "sonner";
 
